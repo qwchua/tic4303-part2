@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "npx prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:migrate:prod": "npx prisma migrate dev && npm start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.1",
